@@ -1,0 +1,23 @@
+#header {
+  position: relative;
+  z-index: 4;
+}
+#navbar {
+    padding-top: 57px;
+}
+
+.languages_Select {
+    border: none;
+    width: 57px;
+    height: 28px;
+    font-size: 20px;
+    padding: 0;
+    font-weight: bold;
+    font-family: Poppins, sans-serif !important;
+    padding-top: -16px;
+}
+
+.languages_Select:focus {
+    outline: 0;
+    box-shadow: none;
+}

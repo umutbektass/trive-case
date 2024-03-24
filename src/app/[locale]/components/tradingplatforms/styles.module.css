@@ -1,0 +1,36 @@
+.platforms_Container{
+    display: flex;
+    gap: 26px;
+}
+.background{
+    position: relative;
+    height: 709px;
+    background-size: contain !important;
+}
+#metatrader_4{
+    background: transparent url('/images/main/metatrader-4.png') 0% 0% no-repeat padding-box;
+}
+#mt4_phone{
+    position: absolute;
+    top: 39%;
+    left: -22%;
+    width: 56%;
+    height: auto;
+}
+#metatrader_5{
+    background: transparent url('/images/main/metatrader-5.png') 0% 0% no-repeat padding-box;
+}
+#mt5_phone{
+    position: absolute;
+    top: 4rem;
+    left: 72%;
+    width: 37%;
+    height: auto;
+}
+#metatrader_Features{
+}
+#metatrader_Features div{
+    width: 400px;
+    background: transparent url('/images/main/platform-bottom-box-bg.png') 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+}

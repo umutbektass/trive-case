@@ -1,0 +1,46 @@
+body{
+    font-family: Poppins,sans-serif !important;
+    /* background: transparent url('/images/main/background.png') 0% 0% no-repeat padding-box; */
+    /* height: 724px; */
+    opacity: 1;
+    background-color: #F7F7F7;
+}
+h1,h2{
+    font-size: 48px;
+    font-weight: bold;
+}
+h3{
+    font-size: 48px;
+    font-family: 'PoppingRegular', sans-serif;
+ }
+ .main-container{
+    max-width: 1272px !important;
+    margin: 0 auto;
+ }
+
+ @media screen and (max-width: 1400px) {
+    .main-container{
+        max-width: 1140px !important;
+     }
+ }  
+
+ @media screen and (max-width: 1200px) {
+    .main-container{
+        max-width: 960px !important;
+     }
+ }  
+ @media screen and (max-width: 1025px) {
+    h1,h2{
+     font-size: 2.5rem;
+    }
+  } 
+ @media screen and (max-width: 992px) {
+    .main-container{
+        max-width: 720px !important;
+     }
+ }  
+ @media screen and (max-width: 575px) {
+    .main-container{
+        padding: 0 1rem;
+     }
+ }  
