@@ -1,0 +1,17 @@
+#award_Winning{
+    /* background: url('/images/main/Award-Winning-Broker.png'); */
+    background: white; /* Arka plan beyaz, resim merkezde ve tam boyutta */
+    /* height: 900px; */
+
+}
+#award{
+    background: url('/images/main/award.png') ;
+    height: 476px;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+#bg{
+    height: 75vh;
+   background:  url('/images/main/Award-Winning-Broker.png') center/cover no-repeat;
+}

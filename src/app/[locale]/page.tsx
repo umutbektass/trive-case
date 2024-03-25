@@ -4,16 +4,18 @@ import styles from './page.module.css'
 import AccountList from "./components/account-list";
 import FairMarkets from "./components/fairmarkets";
 import TradingPlatforms from "./components/tradingplatforms";
+import AwardWinningBroker from "./components/award-winning-broker";
 export default function Home() {
   const t = useTranslations('Index');
    {/* <h1>Test</h1>
     <h1>{t('title')}</h1> */}
   return (
     <div>
-      <div className="main-container">
+      <div >
       <AccountList/>
       <FairMarkets/>
       <TradingPlatforms/>
+      <AwardWinningBroker/>
       </div>
      
     </div>

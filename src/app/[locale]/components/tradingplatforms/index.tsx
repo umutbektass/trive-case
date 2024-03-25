@@ -1,7 +1,8 @@
+import Link from 'next/link';
 import styles from './styles.module.css'
 function TradingPlatforms() {
     return (
-        <div>
+        <div className="main-container">
             <h2 className="text-center">Trading Platforms & Tools</h2>
             <div className='container'>
                 <div className='row'>
@@ -11,27 +12,45 @@ function TradingPlatforms() {
                     <div className={`${styles.background} col-md-6`} id={styles.metatrader_5}>
                         <img src='/images/main/mt5-phone.png' id={styles.mt5_phone}></img>
                     </div>
-                    </div>
-                   
-                  
-
-               
+                </div>
             </div>
-            <div className='container '>
-            <div className='row g-2' id={styles.metatrader_Features}>
-                    <div className='col'>
-                    <img src='/images/main/booster.png'></img>
-                    <h3>MT4/MT5 Booster</h3>
+            <div className="container overflow-hidden">
+                <div className="row gx-4" id={styles.metatrader_Features} >
+                    <div className="col">
+                        <section className="p-4 border bg-light">
+                            <div className='d-flex justify-content-end'>
+                                <img className='mb-5' src='/images/main/booster.png' id={styles.booster}></img>
+                            </div>
+                          
+                                <h4 >MT4/MT5 Booster</h4>
+                                <p>Boost your platform with add-ons designed to enhance your trading experience!</p>
+                           
+
+                        </section>
                     </div>
-                    <div className='col'>
-                    <img src='/images/main/private-server.png'></img>
-                    <h3>VPS -Virtual Private Server</h3>
+                    <div className="col">
+                        <section className={` p-4`}>
+
+                            <div className='d-flex justify-content-end'>
+                                <img className='mb-5' src='/images/main/private-server.png' id={styles.private_Server}></img>
+                            </div>
+                            <h4>VPS -Virtual Private Server</h4>
+                            <p>Secure & private platform to access your trades remotely; no downtime</p>
+                            </section>
                     </div>
-                    <div className='col'>
-                    <img src='/images/main/central.png'></img>
-                    <h3>Trading Central</h3>
+                    <div className="col">
+                        <section className="p-4 border bg-light">
+                            <div className='d-flex justify-content-end'>
+                                <img className='mb-5' src='/images/main/central.png' id={styles.central}></img>
+                            </div>
+                            <h4>Trading Central</h4>
+                            <p>Unmatched research and analysis services for FairMarkets’ traders</p>
+                            </section>
                     </div>
+                    <div className='d-flex justify-content-center mt-5'>
+                        <Link href={''} scroll={false} id={styles.oppen_Account}></Link>
                     </div>
+                </div>
             </div>
         </div>
     );

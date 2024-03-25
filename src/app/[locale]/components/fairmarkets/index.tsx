@@ -1,7 +1,7 @@
 import styles from './styles.module.css'
 function FairMarkets() {
     return (
-      <div>
+      <div className="main-container">
         <h2 className={`text-center ${styles.title}`}>Why FairMarkets</h2>
         <div className={styles.whyfairmarkets_Container}>
         <div id={styles.lowest_Costs}>

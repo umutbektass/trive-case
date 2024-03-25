@@ -1,36 +1,71 @@
-.platforms_Container{
+.platforms_Container {
     display: flex;
     gap: 26px;
 }
-.background{
+
+.background {
     position: relative;
     height: 709px;
     background-size: contain !important;
 }
-#metatrader_4{
+
+#metatrader_4 {
     background: transparent url('/images/main/metatrader-4.png') 0% 0% no-repeat padding-box;
 }
-#mt4_phone{
+
+#mt4_phone {
     position: absolute;
     top: 39%;
     left: -22%;
     width: 56%;
     height: auto;
 }
-#metatrader_5{
+
+#metatrader_5 {
     background: transparent url('/images/main/metatrader-5.png') 0% 0% no-repeat padding-box;
 }
-#mt5_phone{
+
+#mt5_phone {
     position: absolute;
     top: 4rem;
     left: 72%;
     width: 37%;
     height: auto;
 }
-#metatrader_Features{
+
+#metatrader_Features {
+    color: white;
 }
-#metatrader_Features div{
-    width: 400px;
+
+#metatrader_Features section {
+    height: 410px;
     background: transparent url('/images/main/platform-bottom-box-bg.png') 0% 0% no-repeat padding-box;
+    background-position: center;
     border-radius: 8px;
+}
+
+#metatrader_Features p {
+    font-size: 24px;
+}
+
+#booster {
+    width: 79px;
+    height: 77px;
+}
+
+#private_Server {
+    width: 48px;
+    height: 75px;
+}
+
+#central {
+    width: 90px;
+    height: 77px;
+}
+#oppen_Account{
+    width: 200px;
+    height: 48px;
+    background:url('/images/main/open-account.png') ;
+    background-size: contain;
+    display: block;
 }
