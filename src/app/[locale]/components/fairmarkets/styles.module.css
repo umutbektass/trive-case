@@ -7,26 +7,34 @@
 }
 .whyfairmarkets_Container div{
     position: relative;
-    width: 400px;
+    width:-webkit-fill-available;
     min-width: 220px;
-
-    height: 300px;
+    height: auto;
     background-size: contain !important;
 }
 .whyfairmarkets_Container div img{
-    position: absolute;
-    right: 15px;
-    top: -20px;
+  margin-top: -3rem;
+}
+.whyfairmarkets_Container div h4{
+    width: min-content;
+}
+.whyfairmarkets_Container div p {
+    width: 70%;
 }
 #lowest_Costs{
-    background: transparent url('/images/main/lowest-costs.png') 0% 0% no-repeat padding-box;
+    background: var(--purple-color)
 }
 #instant_Execution{
-    background: transparent url('/images/main/instant-execution.png') 0% 0% no-repeat padding-box;
+    background: var(--color-0097d6)
 }
 #local_Support{
-    background: transparent url('/images/main/local-support.png') 0% 0% no-repeat padding-box;
+    background: var(--green-color)
 }
+@media screen and (max-width: 1024px) {
+    .whyfairmarkets_Container div p {
+        width: 90%;
+    }
+ }
 @media screen and (max-width: 768px) {
     .whyfairmarkets_Container{
         flex-wrap: wrap;

@@ -1,3 +1,6 @@
+#title{
+    margin-block: 6rem 4rem;
+}
 .platforms_Container {
     display: flex;
     gap: 26px;
@@ -9,26 +12,30 @@
     background-size: contain !important;
 }
 
-#metatrader_4 {
-    background: transparent url('/images/main/metatrader-4.png') 0% 0% no-repeat padding-box;
+#metatrader_4 ,
+#metatrader_5{
+    background: transparent url('/images/main/platforms-bg.svg') 0% 0% no-repeat padding-box;
+    height: 700px;
+}
+#metatrader_5 p {
+   width: 70%;
+}
+#metatrader_4 p,
+#metatrader_4 h4,
+#metatrader_5 p,
+#metatrader_5 h4 {
+    color: var(--dark-color) !important;
 }
 
 #mt4_phone {
-    position: absolute;
-    top: 39%;
-    left: -22%;
+   margin-left: -7rem;
     width: 56%;
     height: auto;
 }
 
-#metatrader_5 {
-    background: transparent url('/images/main/metatrader-5.png') 0% 0% no-repeat padding-box;
-}
-
 #mt5_phone {
-    position: absolute;
-    top: 4rem;
-    left: 72%;
+    margin-right: -7rem;
+    margin-top: -7rem;
     width: 37%;
     height: auto;
 }
@@ -38,7 +45,7 @@
 }
 
 #metatrader_Features section {
-    height: 410px;
+    height: 470px;
     background: transparent url('/images/main/platform-bottom-box-bg.png') 0% 0% no-repeat padding-box;
     background-position: center;
     border-radius: 8px;
@@ -62,10 +69,24 @@
     width: 90px;
     height: 77px;
 }
-#oppen_Account{
-    width: 200px;
-    height: 48px;
-    background:url('/images/main/open-account.png') ;
-    background-size: contain;
-    display: block;
+.mt4_BottomContent{
+    position: absolute;
+    right: 2rem;
+    bottom:2rem;
+    font-size: 10rem !important;
+    font-weight: 900;
+}
+.mt5_BottomContent{
+    position: absolute;
+    left: .7rem;
+    bottom:2rem;
+    font-size: 10rem !important;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 1200px) {
+    #metatrader_Features section {
+        height: 360px;
+    }
+
 }
