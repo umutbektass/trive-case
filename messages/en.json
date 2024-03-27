@@ -1,5 +1,45 @@
 {
-    "Index": {
-      "title": "Hello world!"
-    }
+  "main-slider":{
+    "h1":"Unleash the power of trading GOLD CFDs Today",
+    "h2":"Spreads starting from 0.1"
+  },
+  "fairMarkets":{
+    "h2":"Why FairMarkets",
+    "lowest-costs-title":"Lowest costs",
+    "lowest-costs-content":"Our transparent and low commisions minimize costs to maximize returns",
+    "instant-execution-title":"Instant Execution",
+    "instant-execution-content":"High Number of Execution in 0.02 seconds",
+    "local-support-title":"Local Support",
+    "local-support-content":"24/5 expert customer support, available in 6 languages"
+  },
+  "trading-platforms":{
+    "h2":"Trading Platforms & Tools",
+    "mt-4":"MetaTrader4",
+    "mt-4-content":"MetaTrader 4 is a sophisticticated trading application that provides you with a variety of tools and features to assist you in conducting analysis and customizing your trading experience.",
+    "mt-5":"MetaTrader5",
+    "mt-5-content":"MT5 smooth user interface can be fully shaped to your taste so you can trade &amp; analyze the way you want.",
+    "booster":{
+      "title":"MT4/MT5 Booster",
+      "content":"Boost your platform with add-ons designed to enhance your trading experience!"
+    },
+    "vps":{
+      "title":"VPS -Virtual Private Server",
+      "content":"Secure & private platform to access your trades remotely &amp; no downtime!"
+    },
+    "central":{
+      "title":"Trading Central",
+      "content":"Unmatched research and analysis services for FairMarkets &#39; traders!"
+    },
+    "btn":"Open account"
+  },
+  "footer":{
+    "risk-title":"RISK WARNING",
+    "risk-top-content":"Fairmarkets International Ltd., which is subject to ownership and control of Trive Investment B.V. , holds an Investment Dealer (Full Service Dealer, excludingUnderwriting) Licence with licence number GB21026295 pursuant to section 29 of the Securities Act 2005, Rule 4 of the Securities Rules 2007, and the Financial Services Rules 2008. Fairmarkets International Ltd. is authorized and regulated by the Mauritius Financial Services Commission (FSC) and holds Global Business Licence number GB21026295 under Section 72(6) of the Financial Services Act. FairMarkets is a trademark of Fairmarkets International Ltd.",
+    "middle-content":"No services are offered to stateless persons, persons under the age of 18 years, persons and/or residents of sanctioned countries or any other jurisdiction where the  distribution of leveraged instruments is prohibited, and citizens of any state or country where it may be against the law of that country to trade with a Mauritius and/or Australia based company and/or where the services are not made available by the Fairmarkets International Ltd. and/or Fairmarkets Trading Pty Ltd to hold an account with us.In any case, above all, it is your responsibility to avoid contravening any legislation in the country from where you are at the time",
+    "risk-sub-content":" CDFs instruments and come with a high risk of losing money rapidly due to leverage. You should consider whether you understand how CFDs work and whether you can afford to take  the high risk of losing your money. See our full Risk Disclosure and Terms of Business for further details."
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, tr {TR} en {EN} other {Unknown}}"
+  }
   }

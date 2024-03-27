@@ -1,6 +1,7 @@
-#title{
+#title {
     margin-block: 6rem 4rem;
 }
+
 .platforms_Container {
     display: flex;
     gap: 26px;
@@ -12,14 +13,16 @@
     background-size: contain !important;
 }
 
-#metatrader_4 ,
-#metatrader_5{
+#metatrader_4,
+#metatrader_5 {
     background: transparent url('/images/main/platforms-bg.svg') 0% 0% no-repeat padding-box;
     height: 700px;
 }
+
 #metatrader_5 p {
-   width: 70%;
+    width: 70%;
 }
+
 #metatrader_4 p,
 #metatrader_4 h4,
 #metatrader_5 p,
@@ -28,7 +31,7 @@
 }
 
 #mt4_phone {
-   margin-left: -7rem;
+    margin-left: -7rem;
     width: 56%;
     height: auto;
 }
@@ -69,24 +72,75 @@
     width: 90px;
     height: 77px;
 }
-.mt4_BottomContent{
-    position: absolute;
-    right: 2rem;
-    bottom:2rem;
-    font-size: 10rem !important;
-    font-weight: 900;
-}
+.mt4_BottomContent,
 .mt5_BottomContent{
     position: absolute;
-    left: .7rem;
-    bottom:2rem;
     font-size: 10rem !important;
     font-weight: 900;
 }
 
-@media screen and (max-width: 1200px) {
+.mt4_BottomContent {
+    right: 2rem;
+    bottom: 2rem;
+}
+
+.mt5_BottomContent {
+    left: .7rem;
+    bottom: 2rem;
+}
+
+@media screen and (max-width: 1300px) {
     #metatrader_Features section {
         height: 360px;
     }
 
+    #mt5_phone {
+        margin-right: -3rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .background {
+        height: 68vh;
+    }
+
+    #metatrader_4,
+    #metatrader_5 {
+        height: 60vh;
+    }
+    .mt4_BottomContent,
+    .mt5_BottomContent {
+        font-size: 8rem !important;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    #metatrader_Features section {
+        height: 290px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 575px) {
+    #mt4_phone {
+        z-index: 5;
+        position: relative;
+        margin-left: -4rem;
+
+    }
+    .background {
+        height: 55vh;
+    }
+    #metatrader_4,
+    #metatrader_5 {
+        height: 47vh;
+    }
+    .mt4_BottomContent{
+        left: .7rem;
+    }
+    #metatrader_5 p {
+        width: 100%;
+    }
 }

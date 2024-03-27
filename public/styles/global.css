@@ -123,9 +123,24 @@ footer {
       max-width: 720px !important;
    }
 }
-
+@media screen and (max-width: 768px) {
+   .main-container {
+      max-width: 540px !important;
+   }
+   h1,
+   h2 {
+      font-size: 1.5rem !important;
+   }
+   h3,h4{
+      font-size: 1.3rem !important;
+   }
+   p{
+      font-size: 1.1rem !important;
+   }
+}
 @media screen and (max-width: 575px) {
    .main-container {
       padding: 0 1rem;
    }
+ 
 }

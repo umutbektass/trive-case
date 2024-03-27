@@ -1,6 +1,6 @@
 
 .accontList_Container{
-    margin-top: -18rem;
+    margin-top: -14rem;
     z-index: 2;
     position: relative;
 }
@@ -11,4 +11,15 @@
 #userList_Container{
     height: 495px;
     overflow-y: auto;
+}
+#userList_Container p{
+    font-size: 1.1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .accontList_Container{
+        margin-top: -10rem;
+    }
+ 
 }

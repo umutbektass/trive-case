@@ -5,6 +5,9 @@
 #navbar {
     padding-top: 57px;
 }
+.logo{
+    width: 357px;
+}
 
 .languages_Select {
     border: none;
@@ -20,4 +23,11 @@
 .languages_Select:focus {
     outline: 0;
     box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+    .logo{
+        width: 250px;
+    }
+    
 }

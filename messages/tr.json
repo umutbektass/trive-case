@@ -1,5 +1,46 @@
 {
-    "Index": {
-      "title": "Merhaba dünya!"
-    }
+  "main-slider": {
+    "h1": "Bugün ALTIN CFD'leri işlem yapmanın gücünü serbest bırakın",
+    "h2": "Spread'ler 0.1'den başlıyor"
+  },
+  
+  "fairMarkets": {
+    "h2": "Neden FairMarkets",
+    "lowest-costs-title": "En Düşük Maliyetler",
+    "lowest-costs-content": "Şeffaf ve düşük komisyonlarımız maliyetleri minimize ederek getirileri maksimize eder",
+    "instant-execution-title": "Anında İşlem",
+    "instant-execution-content": "0.02 saniyede Yüksek Sayıda İşlem",
+    "local-support-title": "Yerel Destek",
+    "local-support-content": "24/5 uzman müşteri desteği, 6 dilde mevcuttur"
+  },
+  "trading-platforms": {
+    "h2": "İşlem Platformları ve Araçlar",
+    "mt-4": "MetaTrader4",
+    "mt-4-content": "MetaTrader 4, analiz yapmanıza ve işlem deneyiminizi özelleştirmenize yardımcı olacak çeşitli araçlar ve özellikler sunan sofistike bir işlem uygulamasıdır.",
+    "mt-5": "MetaTrader5",
+    "mt-5-content": "MT5, kullanıcı arayüzünü tamamen kendi zevkinize göre şekillendirebileceğiniz şekilde yumuşak bir kullanıcı arayüzü sunar, böylece istediğiniz gibi işlem yapabilir ve analiz yapabilirsiniz.",
+    "booster": {
+      "title": "MT4/MT5 Booster",
+      "content": "İşlem deneyiminizi geliştirmek için tasarlanmış eklemelerle platformunuzu güçlendirin!"
+    },
+    "vps": {
+      "title": "VPS - Sanal Özel Sunucu",
+      "content": "İşlemlerinize uzaktan erişmek için güvenli ve özel bir platform, kesintisiz işlem yapın!"
+    },
+    "central": {
+      "title": "Trading Central",
+      "content": "FairMarkets'in tüccarları için eşsiz araştırma ve analiz hizmetleri!"
+    },
+    "btn": "Hesap aç"
+  },
+  "footer": {
+    "risk-title": "RİSK UYARISI",
+    "risk-top-content": "Trive Investment B.V.'nin sahipliğine ve kontrolüne tabi olan Fairmarkets International Ltd., Menkul Kıymetler Yasası 2005'in 29. maddesi, Menkul Kıymetler Kuralları 2007'nin 4. kuralı ve Finansal Hizmetler Kuralları 2008 uyarınca GB21026295 lisans numarasıyla Yatırım Aracı (Tam Hizmet Aracısı, Underwriting hariç) Lisansına sahiptir. Fairmarkets International Ltd., Mauritius Finansal Hizmetler Komisyonu (FSC) tarafından yetkilendirilmiş ve düzenlenmiştir ve Finansal Hizmetler Yasası'nın 72(6) numaralı bölümü uyarınca GB21026295 numaralı Global İş Lisansı'na sahiptir. FairMarkets, Fairmarkets International Ltd.'nin ticari markasıdır.",
+    "middle-content": "Devletsiz kişilere, 18 yaşın altındaki kişilere, yaptırım uygulanan ülkelerin vatandaşlarına ve/veya sakinlerine veya kaldıraçlı enstrümanların dağıtımının yasaklandığı diğer herhangi bir yargı alanına hizmet sunulmamaktadır, ayrıca Mauritius ve/veya Avustralya merkezli bir şirketle işlem yapmanın bir ülkenin yasalarına aykırı olabileceği veya hizmetlerin Fairmarkets International Ltd. ve/veya Fairmarkets Trading Pty Ltd. tarafından sunulmadığı herhangi bir devlet veya ülkenin vatandaşlarına ve/veya sakilerine hesap açmanız yasak olabilir. Her durumda, öncelikle, bulunduğunuz ülkenin yasalarını ihlal etmemek sizin sorumluluğunuzdadır.",
+    "risk-sub-content": "CDF'ler yüksek bir kaldıraç nedeniyle hızlı bir şekilde para kaybetme riski taşıyan enstrümanlardır. CFD'lerin nasıl çalıştığını anlayıp anlayamayacağınızı ve paranızı kaybetme riskini göze alıp alamayacağınızı düşünmelisiniz. Daha fazla bilgi için Tam Risk Açıklaması ve İş Koşullarımızı inceleyiniz."
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, tr {TR} en {EN} other {Unknown}}"
+  }
   }

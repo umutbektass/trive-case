@@ -8,6 +8,7 @@ import * as Yup from 'yup';
 import Link from 'next/link';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import InputMask from './phone-input-mask/index'
 function AccountList() {
   const [loading, setLoading] = useState<boolean>(true);
   const [users, setUsers] = useState<User[]>([]);
@@ -65,10 +66,14 @@ function removeUserFromUserList(id: number) {
   useEffect(() => {
     fetchData();
   }, []);
+
+
+
+  
   return (
-    <div className={styles.accontList_Container}>
+    <div className={`${styles.accontList_Container} main-container`}>
               <ToastContainer />
-      <div className={`main-container border rounded mt-5 px-3`} style={{ backgroundColor: 'white' }}>
+      <div className={` border rounded mt-5 px-3`} style={{ backgroundColor: 'white' }}>
         <div className="row">
           <div className="col-lg-4 p-4 border-end" >
             <h2 className={`${styles.form_Title} mb-3 text-center `}>Account List</h2>
@@ -120,6 +125,7 @@ function removeUserFromUserList(id: number) {
                   </Form>
                 )}
               </Formik>
+              <InputMask/>
             </div>
           </div>
           <div className="col-lg-8" id={styles.userList_Container}>

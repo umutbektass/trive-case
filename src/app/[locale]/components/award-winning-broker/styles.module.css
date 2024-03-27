@@ -1,8 +1,5 @@
 #award_Winning{
-    /* background: url('/images/main/Award-Winning-Broker.png'); */
-    background: white; /* Arka plan beyaz, resim merkezde ve tam boyutta */
-    /* height: 900px; */
-
+       background: var(--white-color)
 }
 #award{
     background: url('/images/main/award.png') ;
@@ -18,3 +15,15 @@
 #bg div{
     margin-top: -4rem;
 }
+
+@media screen and (max-width: 1400px) {
+    #bg{
+        height: 60vh;
+    }
+ }
+ @media screen and (max-width: 768px) {
+    #bg{
+        height: 50vh;
+    }
+ }
+ 
