@@ -65,7 +65,7 @@ function TradingPlatforms() {
                             </section>
                     </div>
                     <div className='d-flex justify-content-center mt-5'>
-                        <Link className='open-account ' href={''} scroll={false} id={styles.oppen_Account}>{t('btn')}</Link>
+                        <Link className='primary-btn ' href={''} scroll={false} id={styles.oppen_Account}>{t('btn')}</Link>
                     </div>
                 </div>
             </div>

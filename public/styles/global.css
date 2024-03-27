@@ -16,6 +16,14 @@ body {
    background-color: #F7F7F7 !important;
 }
 
+.main-container {
+   max-width: 1272px !important;
+   margin: 0 auto;
+}
+.main-slider{
+   background-color: var(--white-color);
+}
+
 h1,
 h2 {
    font-size: 48px !important;
@@ -52,15 +60,10 @@ p{
    color: var(--white-color);
 }
 
-.main-container {
-   max-width: 1272px !important;
-   margin: 0 auto;
-}
-.main-slider{
-   background-color: var(--white-color);
-}
 
-.open-account {
+
+/* BUTTON */
+.primary-btn {
    text-align: center;
    width: 200px;
    text-decoration: none;
@@ -74,20 +77,15 @@ p{
    justify-content: center;
    border-radius: 4px;
 }
-.primary-btn{
-   width: 200px;
-   background-color: #5770EA !important;
-   color: white !important;
-   font-weight: bold !important;
-   font-family: 'Poppins' !important;
-   height: 48px;
 
-}
+
 
 footer {
    padding: 5rem 0;
    background-color: #2A2B23;
 }
+
+
 
  .form-control.is-invalid{
    background-image: none !important;
@@ -101,13 +99,13 @@ footer {
    color: transparent !important;
 }
 
+
+/* Media Queries */
 @media screen and (max-width: 1400px) {
    .main-container {
       max-width: 1140px !important;
    }
 }
-
-
 
 @media screen and (max-width: 1200px) {
    .main-container {

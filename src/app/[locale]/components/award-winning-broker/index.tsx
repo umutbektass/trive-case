@@ -25,7 +25,7 @@ function AwardWinningBroker() {
                     </div>
                 </div>
                 <div className='d-flex justify-content-center'>
-                    <Link className='open-account mb-5' href={''} scroll={false}>{t('btn')}</Link>
+                    <Link className='primary-btn mb-5' href={''} scroll={false}>{t('btn')}</Link>
                 </div>
         </div>
     );

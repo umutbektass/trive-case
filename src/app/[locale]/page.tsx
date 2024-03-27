@@ -7,7 +7,6 @@ import MainSlider from "./components/main-slider";
 export default function Home() { 
   return (
     <div>
-    
       <MainSlider/>
       <AccountList/>
       <FairMarkets/>

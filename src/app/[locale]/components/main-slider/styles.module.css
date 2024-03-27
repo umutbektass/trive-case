@@ -6,12 +6,10 @@
 .contentContainer {
     width: 914px;
     height: 95vh;
-    /* UI Properties */
-    background: transparent url('/images/main/büyük.png') 0% 0% no-repeat padding-box;
+    background: transparent url('/images/main/01-xl.png') 0% 0% no-repeat padding-box;
     background-size: contain;
     background-position: center;
     opacity: 1;
-
 }
 
 .contentContainer h2 {
@@ -26,7 +24,7 @@
 
 @media screen and (max-width: 1300px) {
     .contentContainer {
-        background: transparent url('/images/main/kücük.png') 0% 0% no-repeat padding-box;
+        background: transparent url('/images/main/01-sm.png') 0% 0% no-repeat padding-box;
         background-size: contain;
         background-position: center;
     }
