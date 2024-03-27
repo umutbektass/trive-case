@@ -7,12 +7,12 @@ export default createMiddleware({
   // Used when no locale matches
   defaultLocale: 'en',
 
-  localePrefix: 'never',
+
  
 
 });
  
 export const config = {
   // Match only internationalized pathnames
-  matcher: ['/', '/(de|en|tr)/:path*']
+  matcher: ['/', '/(|en|tr)/:path*']
 };
