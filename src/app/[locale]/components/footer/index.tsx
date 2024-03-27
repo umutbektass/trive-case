@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 function Footer() {
     const t = useTranslations('footer');
     return (
-        <footer>
+        <footer >
             <div className='main-container'>
                 <section id={styles.first_Section}>
                     <h5>{t('risk-title')}</h5>

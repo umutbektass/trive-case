@@ -9,7 +9,7 @@ function TradingPlatforms() {
         <div className="main-container">
             <h2 className="text-center" id={styles.title}>{t('h2')}</h2>
             <div className='container'>
-                <div className='row gx-5'>
+                <div className='row g-5'>
                     <div className={`${styles.background} col-md-6 `} >
                         <div className='p-4 relative' id={styles.metatrader_4}>
                         <h4 className='mb-4 mt-2'>{t('mt-4')}</h4>
@@ -61,7 +61,7 @@ function TradingPlatforms() {
                                 <img className='mb-5' src='/images/main/central.png' id={styles.central}></img>
                             </div>
                             <h4>{t('central.title')}</h4>
-                            <p>{t('central.title')}</p>
+                            <p>{t('central.content')}</p>
                             </section>
                     </div>
                     <div className='d-flex justify-content-center mt-5'>

@@ -135,7 +135,11 @@
     }
     #metatrader_4,
     #metatrader_5 {
-        height: 47vh;
+        height: -webkit-fill-available;
+    }
+    .mt4_BottomContent,
+    .mt5_BottomContent{
+        margin-bottom: -3rem;
     }
     .mt4_BottomContent{
         left: .7rem;

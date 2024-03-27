@@ -4,3 +4,12 @@
 #second_Section{
     margin-bottom: 3rem;
 }
+
+@media screen and (max-width: 575px) { 
+    #first_Section,
+    #second_Section{
+        margin-bottom: 3rem;
+    }
+
+    
+}

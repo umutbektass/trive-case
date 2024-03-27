@@ -29,5 +29,8 @@
     .logo{
         width: 250px;
     }
+    #navbar {
+        padding-top: 30px;
+    }
     
 }

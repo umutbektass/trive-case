@@ -3,24 +3,23 @@ import { useEffect, useState } from 'react';
 import styles from './styles.module.css'
 import { getTodos } from './service'
 import { User } from './types/User'
-import { Formik, Form, Field } from 'formik';
-import * as Yup from 'yup';
+import { Formik } from 'formik';
 import Link from 'next/link';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import InputMask from './phone-input-mask/index'
+import validate from './validation'
 function AccountList() {
   const [loading, setLoading] = useState<boolean>(true);
   const [users, setUsers] = useState<User[]>([]);
 
   const fetchData = async () => {
     setLoading(true);
-    let users: User[]  = [];
+    let users: User[] = [];
     try {
       if (typeof window !== 'undefined') {
         const storedData = localStorage.getItem('account-list');
-       storedData ?  users = JSON.parse(storedData) : users = await getTodos();
-    }
+        storedData ? users = JSON.parse(storedData) : users = await getTodos();
+      }
       setUsers(users);
     } catch (error) {
 
@@ -32,100 +31,117 @@ function AccountList() {
   function addUserToUserList(value: User) {
     setUsers(prevUsers => {
       const updatedUsers = [...prevUsers, value];
-        typeof window !=='undefined' && localStorage.setItem('account-list', JSON.stringify(updatedUsers));
+      typeof window !== 'undefined' && localStorage.setItem('account-list', JSON.stringify(updatedUsers));
       return updatedUsers;
-  });
-  toast.success("Başarıyla eklendi" , {
-    position:'bottom-right'
-  })
-}
+    });
+    toast.success("Başarıyla eklendi", {
+      position: 'bottom-right'
+    })
+  }
 
-function removeUserFromUserList(id: number) {
-  setUsers(prevUsers => {
+  function removeUserFromUserList(id: number) {
+    setUsers(prevUsers => {
       const updatedUsers = prevUsers.filter(user => user.id !== id);
-      typeof window !=='undefined' && localStorage.setItem('account-list', JSON.stringify(updatedUsers));
+      typeof window !== 'undefined' && localStorage.setItem('account-list', JSON.stringify(updatedUsers));
       return updatedUsers;
-  });
-  toast.success("Başarıyla silindi" , {
-    position:'bottom-right'
-  })
-}
-
-
-
-
-
-  const SignupSchema = Yup.object().shape({
-    name: Yup.string()
-      .required('Zorunlu Alan'),
-    email: Yup.string().email('Lütfen geçerli email giriniz.').required('Zorunlu Alan'),
-    phone: Yup.string()
-    .required('Zorunlu Alan'),
-  });
+    });
+    toast.success("Başarıyla silindi", {
+      position: 'bottom-right'
+    })
+  }
 
   useEffect(() => {
     fetchData();
   }, []);
-
-
-
-  
   return (
     <div className={`${styles.accontList_Container} main-container`}>
-              <ToastContainer />
+      <ToastContainer />
       <div className={` border rounded mt-5 px-3`} style={{ backgroundColor: 'white' }}>
+
+     
         <div className="row">
           <div className="col-lg-4 p-4 border-end" >
             <h2 className={`${styles.form_Title} mb-3 text-center `}>Account List</h2>
-            <div>
+
+            <div className=''>
               <Formik
                 initialValues={{
-                  id:1,
+                  id: 1,
                   name: '',
                   email: '',
-                  phone:''
+                  phone: ''
                 }}
-                validationSchema={SignupSchema}
-                onSubmit={values => {
-                  values.id=users.length === 0 ? 1 : users[users.length - 1].id + 1;
+                validate={validate}
+                onSubmit={(values) => {
+                  values.id = users.length === 0 ? 1 : users[users.length - 1].id + 1;
                   addUserToUserList(values)
                   console.log(values);
                 }}
               >
-                {({ errors, touched }) => (
-                  <Form>
+                {({
+                  values,
+                  errors,
+                  touched,
+                  handleChange,
+                  handleBlur,
+                  handleSubmit,
+                  isSubmitting,
+                  setFieldValue
+                  /* and other goodies */
+                }) => (
+                  <form onSubmit={handleSubmit}>
                     <div className="form-floating mb-3">
-                      <Field name="name" type="text" className={`form-control ${errors.name && touched.name && 'is-invalid'} `} id="floatingInput" placeholder="(555) 555-5555"></Field>
+                      <input type="text"
+                        name='name'
+                        id="floatingInput"
+                        placeholder=''
+                        className={`form-control ${errors.name && touched.name && 'is-invalid'} `}
+                        value={values.name}
+                        onChange={handleChange}></input>
                       {errors.name && touched.name ? (
-                      <p className='text-danger ms-2'>{errors.name}</p>
-                    ) : null}
-                      <label htmlFor="floatingInput">Full name</label>
+                        <span className='text-danger ms-2'>{errors.name}</span>
+                      ) : null}
+                      <label htmlFor="floatingInput" >Full name</label>
                     </div>
                     <div className="form-floating mb-3">
-                      <Field name='email' type="email" className={`form-control ${errors.email && touched.email && 'is-invalid'} `} id="floatingInput" placeholder="(555) 555-5555"></Field>
+                      <input type="text"
+                        name='email'
+                        id="floatingInput"
+                        placeholder=''
+                        className={`form-control ${errors.email && touched.email && 'is-invalid'} `}
+                        value={values.email}
+                        onChange={handleChange}></input>
                       {errors.email && touched.email ? (
-                      <p className='text-danger ms-2'>{errors.email}</p>
-                    ) : null}
-                      <label htmlFor="floatingInput">Email</label>
+                        <span className='text-danger ms-2'>{errors.email}</span>
+                      ) : null}
+                      <label htmlFor="floatingInput" >Email</label>
                     </div>
 
-                        
                     <div className="form-floating mb-3">
-                    <Field name='phone' type="tel" className={`form-control ${errors.phone && touched.phone && 'is-invalid'} `} id="floatingInput" placeholder="(555) 555-5555"></Field>
+                      <input type="tel"
+                        name='phone'
+                        id="floatingInput"
+                        className={`form-control ${errors.phone && touched.phone && 'is-invalid'} `}
+                        placeholder="(555)-555-5555"
+                        value={values.phone}
+                        onChange={(e) => {
+                          const formattedPhone = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+                          if (formattedPhone !== null) {
+                            const formattedValue = !formattedPhone[2] ? formattedPhone[1] : `(${formattedPhone[1]}) ${formattedPhone[2]}${formattedPhone[3] ? '-' + formattedPhone[3] : ''}`;
+                            setFieldValue('phone', formattedValue);
+                          }
+                        }}></input>
                       {errors.phone && touched.phone ? (
-                      <p className='text-danger ms-2'>{errors.phone}</p>
-                    ) : null}
+                        <span className='text-danger ms-2'>{errors.phone}</span>
+                      ) : null}
                       <label htmlFor="floatingInput">Phone</label>
                     </div>
-
-
-
-
                     <button className='btn w-100 primary-btn' type="submit">Add list</button>
-                  </Form>
+
+
+                  </form>
                 )}
               </Formik>
-              <InputMask/>
             </div>
           </div>
           <div className="col-lg-8" id={styles.userList_Container}>
@@ -151,14 +167,14 @@ function removeUserFromUserList(id: number) {
                   </thead>
                   <tbody>
                     {
-                      users.map((item,key) => {
+                      users.map((item, key) => {
                         return (
                           <tr key={key} >
                             <th scope="row">{item.id}</th>
                             <td>{item.name}</td>
                             <td>{item.email}</td>
                             <td>{item.phone}</td>
-                            <td><Link onClick={()=>removeUserFromUserList(item.id)} className='text-decoration-none' href={''} scroll={false}><p className='text-danger'>Sil</p></Link></td>
+                            <td><Link onClick={() => removeUserFromUserList(item.id)} className='text-decoration-none' href={''} scroll={false}><p className='text-danger'>Sil</p></Link></td>
                           </tr>
                         )
                       })
