@@ -49,7 +49,7 @@ function TradingPlatforms() {
                                 <img className='mb-5' src='/images/main/private-server.png' id={styles.private_Server}></img>
                             </div>
                             <h4>VPS -Virtual Private Server</h4>
-                            <p>Secure & private platform to access your trades remotely; no downtime</p>
+                            <p>Secure & private platform to access your trades remotely &amp; no downtime</p>
                             </section>
                     </div>
                     <div className=" col-md-6  col-lg-4">
