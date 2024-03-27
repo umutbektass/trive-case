@@ -8,7 +8,7 @@ function MainSlider() {
  <div>
  <img  className={` img-fluid d-none d-md-block`}  src="/images/main/left-gold.png" alt="gold"></img>
  </div>
-  <div className={`${styles.contentContainer} d-flex flex-column justify-content-center align-items-center`}>
+  <div className={`mt-5 mt-sm-0  ${styles.contentContainer} d-flex flex-column justify-content-center align-items-center`}>
   <h1 className="text-center">{t('h1')}</h1>
   <h2 className="text-center">{t('h2')}</h2>
   </div>

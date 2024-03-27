@@ -131,11 +131,11 @@
 
     }
     .background {
-        height: 55vh;
+        height: auto;
     }
     #metatrader_4,
     #metatrader_5 {
-        height: -webkit-fill-available;
+        height: auto;
     }
     .mt4_BottomContent,
     .mt5_BottomContent{

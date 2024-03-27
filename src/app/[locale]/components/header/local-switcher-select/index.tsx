@@ -1,6 +1,6 @@
 'use client';
 
-import {ChangeEvent, ReactNode, useTransition} from 'react';
+import { ChangeEvent, ReactNode, useTransition } from 'react';
 // import {useRouter, usePathname} from '@/navigation';
 import { useRouter } from 'next/navigation'
 import styles from '@/app/[locale]/components/header/styles.module.css'
@@ -20,8 +20,8 @@ export default function LocaleSwitcherSelect({
     router.push(`/${nextLocale}`)
   }
   return (
-<select className={`form-select ${styles.languages_Select}`}  onChange={onSelectChange}  defaultValue={defaultValue}>
-{children}
-</select>
+    <select className={`form-select ${styles.languages_Select}`} onChange={onSelectChange} defaultValue={defaultValue}>
+      {children}
+    </select>
   );
 }

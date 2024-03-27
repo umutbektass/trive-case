@@ -8,16 +8,16 @@ function TradingPlatforms() {
     return (
         <div className="main-container">
             <h2 className="text-center" id={styles.title}>{t('h2')}</h2>
-            <div className='container'>
-                <div className='row g-5'>
+            <div className='container mb-5 mb-md-0'>
+                <div className='row  g-3 md-g-5'>
                     <div className={`${styles.background} col-md-6 `} >
                         <div className='p-4 relative' id={styles.metatrader_4}>
                         <h4 className='mb-4 mt-2'>{t('mt-4')}</h4>
                         <p>{t('mt-4-content')}</p>
                         <img className='d-none d-sm-block' width={471} height={581} src='/images/main/mt4-phone.png' id={styles.mt4_phone}></img>
                       
-                        <h5 className={styles.mt4_BottomContent}>MT4</h5>
-                      
+                        <h5 className={`${styles.mt4_BottomContent} d-none .d-md-block`}>MT4</h5>
+                        
                         </div>
                     </div>
                     <div className={`${styles.background} col-md-6  `} >
@@ -25,7 +25,7 @@ function TradingPlatforms() {
                     <h4 className='mb-4 mt-2'>{t('mt-5')}</h4>
                         <p>{t('mt-5-content')} </p>
                         <img className=' align-self-end  d-none d-sm-block' src='/images/main/mt5-phone.png' id={styles.mt5_phone}></img>
-                        <h5   className={styles.mt5_BottomContent}>MT5</h5>
+                        <h5   className={`${styles.mt5_BottomContent}  d-none .d-md-block `}>MT5</h5>
                         </div>
                     </div>
                 </div>
