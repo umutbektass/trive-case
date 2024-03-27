@@ -20,7 +20,7 @@ function TradingPlatforms() {
                     <div className={`${styles.background} col-md-6  `} >
                     <div className='p-4 d-flex flex-column' id={styles.metatrader_5}>
                     <h4 className='mb-4 mt-2'>MetaTrader5</h4>
-                        <p>MT5's smooth user interface can be fully shaped to your taste so you can trade &amp; analyze the way you want. </p>
+                        <p>MT5 &#39;s smooth user interface can be fully shaped to your taste so you can trade &amp; analyze the way you want. </p>
                         <img className='align-self-end' src='/images/main/mt5-phone.png' id={styles.mt5_phone}></img>
                         <h5   className={styles.mt5_BottomContent}>MT5</h5>
                         </div>
@@ -58,7 +58,7 @@ function TradingPlatforms() {
                                 <img className='mb-5' src='/images/main/central.png' id={styles.central}></img>
                             </div>
                             <h4>Trading Central</h4>
-                            <p>Unmatched research and analysis services for FairMarkets’ traders</p>
+                            <p>Unmatched research and analysis services for FairMarkets &#39; traders</p>
                             </section>
                     </div>
                     <div className='d-flex justify-content-center mt-5'>
